@@ -14,8 +14,8 @@ const Navbar: React.FC = () => {
 
   return (
     <Header>
-      <div className="logo" />
-      <Menu theme="dark" mode="horizontal" selectedKeys={[current]} onClick={handleClick}>
+      <div className="logo" style={{ width: 120, height: 31, background: 'rgba(255, 255, 255, 0.2)', margin: '16px 28px 16px 0', float: 'left' }} />
+      <Menu theme="dark" mode="horizontal" selectedKeys={[current]} onClick={handleClick} style={{ lineHeight: '64px' }}>
         <Menu.Item key="home" icon={<HomeOutlined />}>
           <Link href="/">Home</Link>
         </Menu.Item>
